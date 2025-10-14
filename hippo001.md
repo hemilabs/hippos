@@ -21,6 +21,11 @@ describe changes to the Hemi Network.
 
 ## HIPPO Process
 
+The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
+"SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
+document are to be interpreted as described in
+[https://datatracker.ietf.org/doc/html/rfc2119](RFC 2119).
+
 All major changes and updates to the Hemi Network should have an
 accompanying HIPPO that describes the change, the steps needed for
 infrastructure runners, and any user-visible changes.
@@ -51,9 +56,9 @@ The following types of HIPPOs are prossible:
 
 ## HIPPO Work Flow
 
-All HIPPOS must be submitted to this
+All HIPPOS MUST be submitted to this
 [repository](https://github.com/hemilabs/hippos) as pull requests.
-They must be in Markdown and should follow the format of this file and
+They MUST be in Markdown and should follow the format of this file and
 MUST include a summary section containing:
 
 ```

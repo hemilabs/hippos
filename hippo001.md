@@ -20,13 +20,13 @@ HIPPO is a Hemi Improvement ProPOsal.  These are design documents to describe ch
 
 ## HIPPO Process
 
-All major changes and updates to the Hemi Network should have an accompanying HIPPO that describes the change, steps need for infrastructure runners, and any user visable changes.
+All major changes and updates to the Hemi Network should have an accompanying HIPPO that describes the change, the steps needed for infrastructure runners, and any user-visible changes.
 
 HIPPOs should be submitted BEFORE a change goes live.
 
-HIPPOs are numbered in the order they are recieved in this repository.  The order in no way indicated the order or status of the actual changes.  The status field of the HIPPO is what determines if it has actually been deployed.
+HIPPOs are numbered in the order they are received in this repository.  The order in no way indicated the order or status of the actual changes.  The status field of the HIPPO is what determines if it has actually been deployed.
 
-Outside of status updates and minor changes (typos, cosmetic, etc.), HIPPOs should not be changed once made active.  They should always be superceded by another HIPPO in the case that a significant change is needed.
+Outside of status updates and minor changes (typos, cosmetic, etc.), HIPPOs should not be changed once made active.  They should always be superseded by another HIPPO in the case that a significant change is needed.
 
 ## HIPPO Types
 
@@ -51,7 +51,7 @@ Created:
 Superseded-By:
 ```
 
-When initally submitted, the status should be `New`.
+When initially submitted, the status should be `New`.
 
 Once active or in use, the status should be changed to `Active`.
 

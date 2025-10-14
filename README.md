@@ -1,8 +1,12 @@
 # Hemi Improvement ProPOsals (HIPPOS)
 
-Largely moddeled after Bitcoin's [BIPs](https://github.com/bitcoin/bips), this repo documents changes to the Hemi Network.
+Largely moddeled after Bitcoin's
+[BIPs](https://github.com/bitcoin/bips), this repo documents changes
+to the Hemi Network.
 
-Initially this will be very light on process and mostly descriptive although we hope to eventually expand this to a true collaborative space to drive Hemi forward.
+Initially, this will be light on process and mostly descriptive.  We
+hope to eventually expand it into a true collaborative space to drive
+Hemi forward.
 
 | Number | Title | Type | Status |
 |--------|-------|------|--------|

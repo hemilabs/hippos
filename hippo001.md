@@ -11,7 +11,6 @@ Comments-URI: NA
 Status: New
 Type: Process
 Created: 2025-10-14
-Superseded-By: NA
 ```
 
 ## What is a HIPPO
@@ -62,16 +61,22 @@ They MUST be in Markdown and should follow the format of this file and
 MUST include a summary section containing:
 
 ```
-HIPPO:
-Title:
-Author:
-Comments-Summary:
-Comments-URI:
-Status:
-Type:
-Created:
-Superseded-By:
+HIPPO: <HIPPO number>
+Title: <HIPPO short title>
+Author: <list of authors' names and email addresses>
+Comments-Summary: <summary>
+Comments-URI: <link to comments>
+Status: <Draft | New | Active | Proposed | Rejected | Withdrawn | Replaced>
+Type: <Process | Network | Misc>
+Created: <creation date, in ISO 8601 (yyyy-mm-dd) format>
+Requires: <HIPPO number(s)>
+Replaces: <HIPPO number>
+Superseded-By: <HIPPO number>
 ```
+
+A HIPPO that is not yet ready for full consideration or require
+additional discussion can be listed as `Draft`.  HIPPOs that do not
+require significant discussion can go right to `New` and skip `Draft`.
 
 When initially submitted, the status should be `New`.
 
@@ -81,9 +86,6 @@ If a new HIPPO replaces it, it should be changed to `Replaced`.
 
 A HIPPO that is no longer being considered should be changed to
 `Withdrawn` or `Rejected`.
-
-A HIPPO that is not yet ready for full consideration can be listed as
-`Draft`.
 
 ## History
 

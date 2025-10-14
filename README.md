@@ -6,4 +6,4 @@ Initially this will be very light on process and mostly descriptive although we 
 
 | Number | Title | Type | Status |
 |--------|-------|------|--------|
-| [1](./hoppo001.md) | HIPPO Purpose and Process | Process | Active |
+| [1](./hippo001.md) | HIPPO Purpose and Process | Process | Active |

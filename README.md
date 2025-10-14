@@ -10,4 +10,4 @@ Hemi forward.
 
 | Number | Title | Type | Status |
 |--------|-------|------|--------|
-| [1](./hippo001.md) | HIPPO Purpose and Process | Process | Active |
+| [1](./hippo-001.md) | HIPPO Purpose and Process | Process | Active |

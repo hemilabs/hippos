@@ -1,6 +1,4 @@
-# HIPPO001
-
-## Summary
+# HIPP-001
 
 ```
 HIPPO: 1

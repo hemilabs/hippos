@@ -1,4 +1,4 @@
-# HIPP-001
+# HIPPO-001
 
 ```
 HIPPO: 1
@@ -30,7 +30,7 @@ infrastructure runners, and any user-visible changes.
 HIPPOs should be submitted BEFORE a change goes live.
 
 HIPPOs are numbered in the order they are received in this repository.
-The order in no way indicated the order or status of the actual
+The order in no way indicates the order or status of the actual
 changes.  The status field of the HIPPO is what determines if it has
 actually been deployed.
 
@@ -41,7 +41,7 @@ needed.
 
 ## HIPPO Types
 
-The following types of HIPPOs are prossible:
+The following types of HIPPOs are possible:
 
 * Process: These describe some change in the way updates to the Hemi
   Network or the HIPPO process itself work.
@@ -72,7 +72,7 @@ Replaces: <HIPPO number>
 Superseded-By: <HIPPO number>
 ```
 
-A HIPPO that is not yet ready for full consideration or require
+A HIPPO that is not yet ready for full consideration or requires
 additional discussion can be listed as `Draft`.  HIPPOs that do not
 require significant discussion can go right to `New` and skip `Draft`.
 

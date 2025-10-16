@@ -3,7 +3,7 @@
 ```
 HIPPO: 1
 Title: HIPPO Purpose and Guidelines
-Author: John C. Vernaleo  <jcv@hemi.xyz>
+Author: John C. Vernaleo <jcv@hemi.xyz>
 Comments-Summary: No comments yet.
 Comments-URI: NA
 Status: New

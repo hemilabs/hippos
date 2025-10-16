@@ -6,22 +6,22 @@ Title: HIPPO Purpose and Guidelines
 Author: John C. Vernaleo <jcv@hemi.xyz>
 Comments-Summary: No comments yet.
 Comments-URI: NA
-Status: New
+Status: Active
 Type: Process
 Created: 2025-10-14
 ```
 
 ## What is a HIPPO
 
-HIPPO is a Hemi Improvement ProPOsal.  These are design documents to
-describe changes to the Hemi Network.
+A HIPPO is a *H**emi **I**mprovement **P**ro**po**sal.  These are
+design documents to describe changes to the Hemi Network.
 
 ## HIPPO Process
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT",
 "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this
 document are to be interpreted as described in
-[https://datatracker.ietf.org/doc/html/rfc2119](RFC 2119).
+[RFC 2119](https://datatracker.ietf.org/doc/html/rfc2119).
 
 All major changes and updates to the Hemi Network should have an
 accompanying HIPPO that describes the change, the steps needed for
@@ -67,10 +67,12 @@ Comments-URI: <link to comments>
 Status: <Draft | New | Active | Proposed | Rejected | Withdrawn | Replaced>
 Type: <Process | Network | Misc>
 Created: <creation date, in ISO 8601 (yyyy-mm-dd) format>
-Requires: <HIPPO number(s)>
-Replaces: <HIPPO number>
-Superseded-By: <HIPPO number>
+* Requires: <HIPPO number(s)>
+* Replaces: <HIPPO number>
+* Superseded-By: <HIPPO number>
 ```
+
+Fields marked with `*` are optional.
 
 A HIPPO that is not yet ready for full consideration or requires
 additional discussion can be listed as `Draft`.  HIPPOs that do not

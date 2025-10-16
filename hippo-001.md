@@ -13,7 +13,7 @@ Created: 2025-10-14
 
 ## What is a HIPPO
 
-A HIPPO is a *H**emi **I**mprovement **P**ro**po**sal.  These are
+A HIPPO is a **H**emi **I**mprovement **P**ro**po**sal.  These are
 design documents to describe changes to the Hemi Network.
 
 ## HIPPO Process

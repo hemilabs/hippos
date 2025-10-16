@@ -5,7 +5,6 @@ HIPPO: 1
 Title: HIPPO Purpose and Guidelines
 Author: John C. Vernaleo <jcv@hemi.xyz>
 Comments-Summary: No comments yet.
-Comments-URI: NA
 Status: Active
 Type: Process
 Created: 2025-10-14
@@ -63,7 +62,7 @@ HIPPO: <HIPPO number>
 Title: <HIPPO short title>
 Author: <list of authors' names and email addresses>
 Comments-Summary: <summary>
-Comments-URI: <link to comments>
+* Comments-URI: <link to comments>
 Status: <Draft | New | Active | Proposed | Rejected | Withdrawn | Replaced>
 Type: <Process | Network | Misc>
 Created: <creation date, in ISO 8601 (yyyy-mm-dd) format>

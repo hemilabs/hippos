@@ -1,23 +1,22 @@
-
 # HIPPO-003
 
-```  
-HIPPO: 3  
+``` 
+HIPPO: 3 
 Title: Hemi Network V2 Upgrade
-Author: António Martins <antono@hemi.xyz>  
-Comments-Summary: No comments yet.  
-Status: New  
-Type: Network  
-Created: 2025-10-29  
-```  
+Author: António Martins <antono@hemi.xyz> 
+Comments-Summary: No comments yet. 
+Status: New 
+Type: Network 
+Created: 2025-10-29 
+``` 
 
 ## Background and Motivation
 
-Over time, previously crucial parts of the Hemi network have become bloated and/or obsolete, hindering forward progress due to increasing technical debt. The Bitcoin Secure Sequence (BSS), for example, was previously an integral part of ensuring communication between the ethereum consensus layer and the Bitcoin Finality Governor (BFG), facilitating the sharing of information related to new keystones, their finality status, and Proof-of-Proof (PoP) payouts. However, as the networked matured, BSS has become just a proxy through which communication must pass, with no clear addedd benefit.
+Over time, previously crucial parts of the Hemi network have become bloated and/or obsolete, hindering forward progress due to increasing technical debt. The Bitcoin Secure Sequence (BSS), for example, was previously an integral part of ensuring communication between the ethereum consensus layer and the Bitcoin Finality Governor (BFG), facilitating the sharing of information related to new keystones, their finality status, and Proof-of-Proof (PoP) payouts. However, as the network matured, BSS has become just a proxy through which communication must pass, with no clear benefit.
 
-Furthermore, as the network is expected to grow and scale, it has become unfeasible to rely on certain components to bear the brunt of storing data and managing interactions between multiple parts of the network. This is the case for BFG, whose central purpose is to, as the name implies, ascertain the finality of L2 keystones relayed to the Bitcoin network by PoP miners. However, rather than solely retaining its expectedly stateless purpose, it grew to fill other roles, such as that of relaying information to PoP miners, and even storing data related to keystones and their finality.  
+Furthermore, as the network is expected to grow and scale, it has become unfeasible to rely on certain components to bear the brunt of storing data and managing interactions between multiple parts of the network. This is the case for BFG, whose central purpose is to, as the name implies, ascertain the finality of L2 keystones relayed to the Bitcoin network by PoP miners. However, rather than solely retaining its expectedly stateless purpose, it grew to fill other roles, such as that of relaying information to PoP miners, and even storing data related to keystones and their finality.
 
-While these choices had originally made sense, at a time in the development of the Hemi network where specific features and capabilities where not yet evenly distributed throughout all major components of the network, this is no longer the case. In order to facilitate further development, decrease communication overhead, permit decentralization of network components, and improve security, a general refactoring and pruning of the network is desirable. As such, the Hemi Network V2 upgrade can be seen as an optimization problem, where the communication and role of major pieces of the network is streamlined, so as to maximize their utility in a scalable manner.
+While these choices had originally made sense, at a time in the development of the Hemi network where specific features and capabilities were not yet evenly distributed throughout all major components of the network, this is no longer the case. In order to facilitate further development, decrease communication overhead, permit decentralization of network components, and improve security, a general refactoring and pruning of the network is desirable. As such, the Hemi Network V2 upgrade can be seen as an optimization problem, where the communication and role of major pieces of the network is streamlined, so as to maximize their utility in a scalable manner.
 
 ## Specification
 
@@ -29,7 +28,7 @@ The following sub-sections go into further detail about the major changes made t
 
 ### Bitcoin Secure Sequence (BSS)
 
-BSS, which acted as a gateway to BFG, managing the consensus mechanisms of the Hemi Network, has been completely removed. It no longer served any purpose beyond acting as a gateway for communication between the Bitcoin and Ethereum components of the network, which is now done directly by said components, without using BSS as an intermediary. 
+BSS, which acted as a gateway to BFG, managing the consensus mechanisms of the Hemi Network, has been completely removed. It no longer served any purpose beyond acting as a gateway for communication between the Bitcoin and Ethereum components of the network, which is now done directly by said components, without using BSS as an intermediary.
 
 ### Ethereum Execution Layer (op-geth)
 
@@ -55,18 +54,18 @@ TBC, Hemi's lightweight Bitcoin node, can now optionally calculate Bitcoin fees 
 
 ### Bitcoin Finality Governor (BFG)
 
-BFG has been drastically simplified, and now runs in a stateless manner. It's only purpose is to receive and respond to queries asking for the finality value of a a keystone (i.e., how deep a keystone is in the Bitcoin chain).
+BFG has been drastically simplified, and now runs in a stateless manner. Its only purpose is to receive and respond to queries asking for the finality value of a keystone (i.e., how deep a keystone is in the Bitcoin chain).
 
 ![BFG workflow](hippo-003/bfg_workflow.png)
 
 Upon receiving a finality request for a keystone, the request is relayed to op-geth, ascertaining the existence of that keystone and up to N descendants. If op-geth is unaware of the keystone, then it must not be present in the canonical chain, and is considered invalid.
 
-In order to calculate the finality of a keystone, BFG then requests information about the presence and depth of these keystones in the Bitcoin chain from a keystone-indexing Bitcoin source-of-truth (e.g., TBC). A keystone inherits the finality value of any descendant whose finality value is greater than its own, as the presence of a keystone in the Bitcoin chain validates the canonicity of every one of its ancestor keystones. Thus, BFG continously sends requests to op-geth requesting increasingly distant descendants.
+In order to calculate the finality of a keystone, BFG then requests information about the presence and depth of these keystones in the Bitcoin chain from a keystone-indexing Bitcoin source-of-truth (e.g., TBC). A keystone inherits the finality value of any descendant whose finality value is greater than its own, as the presence of a keystone in the Bitcoin chain validates the canonicity of every one of its ancestor keystones. Thus, BFG continuously sends requests to op-geth requesting increasingly distant descendants.
 
 Once no more descendants can be retrieved or one of the retrieved keystones has achieved ultrafinality - the point after which a keystone is deep enough in the Bitcoin chain that there is no practical value in calculating a better finality value - the best finality value of any of the keystones is returned back to the caller.
 
-## Compatability
-This upgrade is breaking to most nodes and dameons. Those running standalone daemons should follow the instructions in the [heminetwork repository](https://github.com/hemilabs/heminetwork), in order to update to the latest version. Similarly, node runners should upgrade their nodes by following the instructions in the [hemi-node repository](https://github.com/hemilabs/hemi-node).
+## Compatibility
+This upgrade is breaking to most nodes and daemons. Those running standalone daemons should follow the instructions in the [heminetwork repository](https://github.com/hemilabs/heminetwork), in order to update to the latest version. Similarly, node runners should upgrade their nodes by following the instructions in the [hemi-node repository](https://github.com/hemilabs/hemi-node).
 
 ## Changelog
 

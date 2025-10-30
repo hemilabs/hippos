@@ -60,7 +60,7 @@ Hemi protocol.
 ## Design Components
 The complete design consists of the following components:
 - **Short-Term Pool (STP)**: A pool of assets that collects fees  
-  and smooths out the distribution of this revenue to other components,  
+  and smooths out the distribution of these fees to other components,  
   while earning yield with short-term / liquid strategies
 - **Protocol-Owned Liquidity (POL) Treasury**: A pool of assets owned  
   by the protocol, which serves to provide liquidity to Hemi and earn  
@@ -74,9 +74,9 @@ The complete design consists of the following components:
   allocations of incentives or POL assets
 
 And this system ultimately powers the following economic outcomes:
-- **$HEMI Burns**: A portion of net revenue is converted to $HEMI and burnt  
+- **$HEMI Burns**: A portion of net fees is converted to $HEMI and burnt  
   similar to the EIP-1559 mechanic of Ethereum
-- **veHEMI Base Staking Incentives**: Revenue for all veHEMI position  
+- **veHEMI Base Staking Incentives**: Fees for all veHEMI position  
   holders, distributed based on veHEMI stake weight
 - **Governance Incentives**: Incentives for users to participate in  
   protocol governance, either directly or by or delegation
@@ -139,7 +139,7 @@ incentivize more types of activity and create more incentive alignment
 between the participants in the Hemi ecosystem.
 
 The phases of the economic model will be:
-- **Phase 1 (Today):** Protocol Revenue as veHEMI Incentives & Burn
+- **Phase 1 (Today):** Protocol Fees as veHEMI Incentives & Burn
     - **Mechanics:**
         - Protocol fees are converted into $HEMI and hemiBTC
         - Portion of $HEMI is burnt
@@ -155,14 +155,14 @@ The phases of the economic model will be:
   Protocol-Owned-Liquidity (POL) Treasury
     - **Mechanics:**
         - Every two weeks:
-            - Net protocol revenue after $HEMI purchase & burn is sent
+            - Net protocol fees after $HEMI purchase & burn is sent
               to STP
             - 1/13th of STP's total assets are distributed amongst:
                 - Governance Participation Incentives
                 - veHEMI Staking Incentives
                 - Liquidity Incentives
                 - POL Treasury
-            - Portion of POL Treasury revenue is distributed amongst:
+            - Portion of POL Treasury yield is distributed amongst:
                 - Reallocations back into POL Treasury positions
                 - STP
     - **Outcomes:**

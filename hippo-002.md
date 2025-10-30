@@ -199,7 +199,7 @@ The phases of the economic model will be:
 
 ## Phase 1 Specification Details
 As of October 30 2025, approximately 8.26 ETH in excess protocol fees have been  
-converted to approximately 0.2445 hemiBTC and approximately 100,320.689 $HEMI  
+converted to approximately 0.2445 hemiBTC and approximately 100,320.69 $HEMI  
 which will be distributed to veHEMI stakers active from August 30th at 12:00am GMT  
 (unix epoch 1756512000) to October 30th at 12:00am GMT (unix epoch 1761782400),  
 inclusive.

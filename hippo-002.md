@@ -212,6 +212,17 @@ a total of 62 days. These rewards will be distributed linearly over the 62 days.
 Additionally, approximately 1.51 additional ETH has been converted to 98,216.75  
 $HEMI which has been burnt.
 
+The details for these transactions can be found here:
+ - Conversion of 7 ETH to 0.2445 hemiBTC:
+   - [https://explorer.hemi.xyz/tx/0x205482fccd22cb2996699d0784174c2384452c197cb348116a82b4b9fbd81d78](https://explorer.hemi.xyz/tx/0x205482fccd22cb2996699d0784174c2384452c197cb348116a82b4b9fbd81d78)
+   - [https://explorer.hemi.xyz/tx/0xbf973ecfcc9d44987adff604d97c4642e8f10e9f92ae7c2c7f08243e111d2fc5](https://explorer.hemi.xyz/tx/0xbf973ecfcc9d44987adff604d97c4642e8f10e9f92ae7c2c7f08243e111d2fc5)
+   - [https://explorer.hemi.xyz/tx/0xec4fe936a5f6f737cb32584f96274abe96f13137ce67a56c00daa028c9d96644](https://explorer.hemi.xyz/tx/0xec4fe936a5f6f737cb32584f96274abe96f13137ce67a56c00daa028c9d96644)
+ - Conversion of 2.77 ETH to 198,537.44 HEMI:
+   - [https://explorer.hemi.xyz/tx/0xf8e13b27f9085f48d66bde0ba68827c0382e9bade37aabef29ed01bb5ca81e39](https://explorer.hemi.xyz/tx/0xf8e13b27f9085f48d66bde0ba68827c0382e9bade37aabef29ed01bb5ca81e39)
+   - [https://explorer.hemi.xyz/tx/0xdb2d914bc31b8c52109180550a53115dcb752bb16a7d8c2b5acd9be9fa383861](https://explorer.hemi.xyz/tx/0xdb2d914bc31b8c52109180550a53115dcb752bb16a7d8c2b5acd9be9fa383861)
+ - Burning of 98,216.75 HEMI:
+   - [https://etherscan.io/tx/0x7aa573ea8dbf20ace5477d2631609cce53990aba7f5dfbe9b336b9c22a7c751c](https://etherscan.io/tx/0x7aa573ea8dbf20ace5477d2631609cce53990aba7f5dfbe9b336b9c22a7c751c)
+
 Moving forward, excess protocol fees will be routinely collected and converted  
 to $HEMI and hemiBTC to be distributed as veHEMI rewards, and $HEMI which is burnt.
 

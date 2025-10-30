@@ -230,7 +230,7 @@ Only the owner of a veHEMI NFT position can claim the rewards, and the rewards
 must be claimed per NFT; holders of multiple veHEMI positions will need to perform  
 one claim for each position.
 
-UI components will be added to the Hemi Portal to allow users to clai mrewards on  
+UI components will be added to the Hemi Portal to allow users to claim mrewards on  
 their veHEMI positions, and a future update will show APY estimations.
 
 ## Compatibility
@@ -240,5 +240,5 @@ update their software.
 
 ## Changelog
 
-2025-10-24 Initial version.
+2025-10-24 Initial version.<br>
 2025-10-30 Converted to full Hemi Economic Model details.

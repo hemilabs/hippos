@@ -1,5 +1,16 @@
 # HIPPO-002
 
+```
+HIPPO: 2
+Title: Hemi Economic Model
+Author: Jeff Garzik <jeff@hemi.xyz>
+        Max Sanchez <max@hemi.xyz>
+Comments-Summary: No comments yet.
+Status: Active
+Type: Network
+Created: 2025-10-24
+```
+
 ## Background and Motivation
 The Hemi blockchain connects Bitcoin and Ethereum - enabling new  
 economic opportunities for assets across the two largest blockchain  

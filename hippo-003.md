@@ -3,7 +3,7 @@
 ``` 
 HIPPO: 3 
 Title: Hemi Network V2 Upgrade
-Author: António Martins <antono@hemi.xyz> 
+Author: António Martins <antonio@hemi.xyz> 
 Comments-Summary: No comments yet. 
 Status: New 
 Type: Network 

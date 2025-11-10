@@ -15,7 +15,7 @@ Created: 2025-10-29
 Over time, previously crucial parts of the Hemi network have become bloated
 and/or obsolete, hindering forward progress due to increasing technical debt.
 The Bitcoin Secure Sequence (BSS), for example, was previously an integral part
-of ensuring communication between the ethereum consensus layer and the Bitcoin
+of ensuring communication between the Ethereum consensus layer and the Bitcoin
 Finality Governor (BFG), facilitating the sharing of information related to new
 keystones, their finality status, and Proof-of-Proof (PoP) payouts. However, as
 the network matured, BSS has become just a proxy through which communication must

@@ -5,7 +5,7 @@ HIPPO: 3
 Title: Hemi Network V2 Upgrade
 Author: António Martins <antonio@hemi.xyz> 
 Comments-Summary: No comments yet. 
-Status: New 
+Status: Active 
 Type: Network 
 Created: 2025-10-29 
 ```
@@ -30,7 +30,7 @@ solely retaining its expectedly stateless purpose, it grew to fill other roles,
 such as that of relaying information to PoP miners, and even storing data related
 to keystones and their finality.
 
-While these choices had originally made sense, at a time in the development of
+While these choices had originally made sense at a time in the development of
 the Hemi network where specific features and capabilities were not yet evenly
 distributed throughout all major components of the network, this is no longer the
 case. In order to facilitate further development, decrease communication overhead,

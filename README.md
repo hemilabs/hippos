@@ -1,5 +1,7 @@
 # Hemi Improvement ProPOsals (HIPPOS)
 
+![HIPPOS Logo](./hippo.png)
+
 Largely modeled after Bitcoin's
 [BIPs](https://github.com/bitcoin/bips), this repo documents changes
 to the Hemi Network.
